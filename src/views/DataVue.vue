@@ -33,7 +33,6 @@ export default {
 }
 
 
-/* Gère les écrans de 600px ou moins */
 @media (max-width: 1550px) {
     .redirect-button-position {
         top: 20px;  
