@@ -33,10 +33,10 @@ export default {
 
 .content {
   flex-grow: 1;
-  margin-top: 60px;  /* Adjust based on your navbar's height */
+  margin-top: 60px; 
 }
 
-/* Additional style to ensure footer sticks to the bottom */
+
 footer {
   width: 100%;
 }
