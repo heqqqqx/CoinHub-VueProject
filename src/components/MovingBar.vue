@@ -49,7 +49,7 @@
         largeChartUrl: "http://localhost:8080/data/{tvsymbol}",
         locale: 'en'
       });
-      this.$el.appendChild(script);
+      this.$el.appendChild(script); //test
       
 
     }
