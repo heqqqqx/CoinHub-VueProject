@@ -7,10 +7,8 @@
 <script>
 export default {
   name: 'FooterComponent',
-  // Any data, methods, or lifecycle hooks needed for the footer
 };
 </script>
 
 <style scoped>
-/* Your CSS styles for the footer */
 </style>

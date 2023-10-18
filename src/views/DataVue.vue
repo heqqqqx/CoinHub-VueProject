@@ -1,13 +1,17 @@
 <template>
-  <div>
+  <div v-if="user">
     <trading-view :cryptoname="this.$route.params.cryptoname" />
     <div class="center-container">
       <div class="redirect-button-position">
         <RedirectButton :cryptoname="this.$route.params.cryptoname" />
-    </div>
+      </div>
       <Analysis :symbol="`BINANCE:${$route.params.cryptoname}`" />
-  </div>
+    </div>
   
+  </div>
+  <div v-else class="not-logged-in-message">
+    <h1>You are not logged in</h1>
+    <p>Please log in to view this page and access the full website.</p>
   </div>
   
 </template>
@@ -16,8 +20,13 @@
 import TradingView from '../components/TradingVue.vue';
 import Analysis from '../components/AnalysisComponent.vue';
 import RedirectButton from '../components/RedirectButton.vue';
+import { useAuth0 } from "@auth0/auth0-vue";
 
 export default {
+  setup() {
+    const { user } = useAuth0();
+    return { user };
+  },
   components: { TradingView, Analysis, RedirectButton }
 }
 </script>

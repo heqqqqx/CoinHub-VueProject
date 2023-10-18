@@ -25,6 +25,58 @@ a,
     }
 }
 
+
+.movingbar-data {
+    width: 60%;
+}
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+.nav-item-container {
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  background-color: #444;
+}
+
+
 button {
     background-color: #333;
     border: none;
@@ -44,7 +96,24 @@ button:hover {
     background-color: #007BFF;
     color: white;
 }
-
+.nav-link-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    text-align: left;
+    margin: 0;
+    text-transform: none;
+    overflow: visible;
+  }
+  
+  .nav-link-button:hover {
+    background-color: #444;
+  }
 .ticker-box {
     color: black;
     position: absolute;
@@ -55,4 +124,8 @@ button:hover {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.not-logged-in-message {
+    margin-top :50px;
 }
