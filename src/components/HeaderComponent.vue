@@ -15,7 +15,7 @@
             <LogoutButton/>
         </li>
         
-        <li class="nav-item"><router-link to="/" class="nav-link">Home</router-link></li>
+        <li class="nav-item"><router-link to="/home" class="nav-link">Home</router-link></li>
         <li class="nav-item"><router-link to="/data" class="nav-link">Data</router-link></li>
         <li class="nav-item"><router-link to="/news" class="nav-link">News</router-link></li>
       </ul>
