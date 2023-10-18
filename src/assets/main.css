@@ -5,7 +5,9 @@
     padding: 2rem;
     font-weight: normal;
 }
-
+body {
+  background-color: #181818;
+}
 a,
 .green {
     text-decoration: none;
@@ -147,8 +149,15 @@ button:hover {
   color:#ffffff;
   margin-bottom: 1rem;
 }
+
+.disclaimer-h3{
+  font-size: 1.5rem;
+  color:#a21d1d;
+  margin-bottom: 1rem;
+}
 .header,
 .section {
+  margin-top:2rem;
   margin-bottom: 2rem;
 }
 
@@ -170,4 +179,8 @@ button:hover {
 
 footer {
   width: 100%;
+}
+
+.logo {
+  align-items: left;
 }

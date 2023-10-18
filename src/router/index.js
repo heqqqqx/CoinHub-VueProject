@@ -3,6 +3,7 @@ import NewsVue from '../views/NewsVue.vue';
 import DataVue from '../views/DataVue.vue'
 import DataView from '../views/DataGeneral.vue'
 import BeginnerView from '../views/BeginnerGuide.vue'
+import AboutVue from '../views/AboutVue.vue'
 const routes = [{
         path: '/data/:cryptoname',
         name: 'Data',
@@ -31,6 +32,11 @@ const routes = [{
         name: 'Home',
         component: BeginnerView,
     
+    },
+    {
+        path:'/',
+        name:'AboutUs',
+        component:AboutVue
     }
 
 ];

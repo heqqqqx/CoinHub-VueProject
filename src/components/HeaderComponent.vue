@@ -3,8 +3,8 @@
       
   <nav class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">CoinHub</a>
-      <img src="../assets/coinhub.png" alt="logo" width="50" height="50">
+      <a class="navbar-brand" href="/">CoinHub</a>
+      <img class="logo" src="../assets/coinhub.png" alt="logo" width="50" height="50">
       <a class="movingbar-data" ><MovingBar /></a>
       <ul class="navbar-nav">
 
