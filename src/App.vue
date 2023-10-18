@@ -11,13 +11,8 @@
 <script>
 import Header from './components/HeaderComponent.vue';
 import Footer from './components/FooterComponent.vue';
-import { useAuth0 } from "@auth0/auth0-vue";
 
 export default {
-  setup() {
-    const { user } = useAuth0();
-    return { user };
-  },
   components: {
     Header,
     Footer
