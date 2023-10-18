@@ -34,7 +34,7 @@ mounted() {
     screener_type: "crypto_mkt",
     displayCurrency: "USD",
     colorTheme: "dark",
-    largeChartUrl: "http://localhost:8080/data/{tvsymbol}",
+    largeChartUrl: window.location.origin+"/data/{tvsymbol}",
 
     locale: "en",
   });
