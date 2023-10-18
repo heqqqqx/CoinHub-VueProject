@@ -21,23 +21,5 @@ export default {
 </script>
 
 <style>
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
 
-.content {
-  flex-grow: 1;
-  margin-top: 60px; 
-}
-
-
-footer {
-  width: 100%;
-}
 </style>

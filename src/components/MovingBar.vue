@@ -46,7 +46,7 @@
         colorTheme: 'dark',
         isTransparent: true,
         displayMode: 'regular',
-        largeChartUrl: "http://localhost:8080/data/{tvsymbol}",
+        largeChartUrl: window.location.origin+"/data/{tvsymbol}",
         locale: 'en'
       });
       this.$el.appendChild(script); 
