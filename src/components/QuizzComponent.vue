@@ -1,5 +1,6 @@
 <template>
   <div class="quiz-component">
+    <h1 class="h1-guide">Are you ready for the quizz ?</h1>
     <div v-for="(question, index) in questions" :key="index" class="question">
       <p>{{ question.text }}</p>
       <div
@@ -39,20 +40,28 @@ export default {
         },
         {
           text: "Which platforms simplify buying and selling cryptocurrencies?",
-          options: ["Binance", "Coinbase", "eBay", "Facebook"],
+          options: ["Binance", "Coinbase", "eBay", "BeReal."],
           answer: ["Binance", "Coinbase"],
           userAnswer: "",
         },
         {
           text: "What technology is commonly used to secure cryptocurrencies?",
-          options: ["Blockchain", "HTTPS", "SSL", "Firewall"],
+          options: ["Blockchain", "HTTPS", "SSL", "ASSR2"],
           answer: ["Blockchain"],
           userAnswer: "",
         },
         {
-          text: "Which cryptocurrencies are mentioned in the guide?",
-          options: ["Bitcoin", "Ethereum", "Litecoin", "Tezos"],
-          answer: ["Bitcoin", "Ethereum", "Tezos"],
+          text: "What is the best way to invest ?",
+          options: [
+            "All-in",
+            "Diversify your wallet",
+            "Shitcoins only",
+            "Follow the news and invest in the most promising ones",
+          ],
+          answer: [
+            "Diversify your wallet",
+            "Follow the news and invest in the most promising ones",
+          ],
           userAnswer: "",
         },
       ],
@@ -80,33 +89,16 @@ export default {
       );
     },
     isWrong(questionIndex, option) {
-      return (
-        this.submitted &&
-        !this.questions[questionIndex].answer.includes(option) &&
-        this.isSelected(questionIndex, option)
-      );
-    },
-    isNotComplete(questionIndex, option) {
-      const question = this.questions[questionIndex];
-      const correctAnswersArray = question.answer;
-      const selectedAnswersArray = question.userAnswer
-        .split(",")
-        .map((answer) => answer.trim());
+    return this.submitted && !this.questions[questionIndex].answer.includes(option) && this.isSelected(questionIndex, option) ;
+  },
+  isNotComplete(questionIndex, option) {
+    const question = this.questions[questionIndex];
+    const correctAnswers = question.answer;
+    const selectedAnswers = question.userAnswer.split(',').map(answer => answer.trim());
+    const isCorrect = correctAnswers.every(answer => selectedAnswers.includes(answer));
 
-      const isCorrect = correctAnswersArray.every((answer) =>
-        selectedAnswersArray.includes(answer)
-      );
-      const isNotComplete = correctAnswersArray.some(
-        (answer) => !selectedAnswersArray.includes(answer)
-      );
-
-      return (
-        this.submitted &&
-        !isCorrect &&
-        isNotComplete &&
-        selectedAnswersArray.includes(option)
-      );
-    },
+    return this.submitted && !isCorrect && selectedAnswers.includes(option);
+  }
   },
 };
 </script>
