@@ -13,9 +13,9 @@
         Cryptocurrency is essentially a form of digital money, decentralized and
         designed for secure online transactions. Envisioned as an alternative to
         traditional banking, cryptocurrencies present a novel way of handling
-        money. You can imagine this as Money 2.0. They embody the potential to revolutionize
-        financial exchanges by being fast, easy, cost-effective, safe, and
-        universally accessible.
+        money. You can imagine this as Money 2.0. They embody the potential to
+        revolutionize financial exchanges by being fast, easy, cost-effective,
+        safe, and universally accessible.
       </p>
     </div>
 
@@ -33,14 +33,25 @@
         attractive investment opportunity.
       </p>
     </div>
-
+    <div class="section">
+      <h2 class="h2-guide">What are the different crytocurrencies?</h2>
+      <p>
+        With over 6,000 cryptocurrencies in the world, we can't list all of them
+        here. The most known ones are the Bitcoin and the Ethereum. But, with
+        that many currencies, it can be hard to decide on which to invest.
+        That's why we created this website, to help you understand the different
+        cryptocurrencies and to help you choose the right one for you. You can
+        follow the news of the different cryptocurrencies, see their price, and
+        even see their price evolution in real time.
+      </p>
+    </div>
     <div class="section">
       <h2 class="h2-guide">How to Buy Bitcoin and Other Cryptocurrencies</h2>
       <p>
         Online exchanges like <a href="https://www.binance.com/">Binance</a> or
-        <a href="https://coinbase.com/">Coinbase</a> offer a straightforward way to
-        purchase cryptocurrencies. They provide a range of cryptocurrencies to
-        choose from, and you can buy fractions of a coin to start small. The
+        <a href="https://coinbase.com/">Coinbase</a> offer a straightforward way
+        to purchase cryptocurrencies. They provide a range of cryptocurrencies
+        to choose from, and you can buy fractions of a coin to start small. The
         platform also provides insights to help you make informed choices based
         on your goals.
       </p>
@@ -67,14 +78,14 @@
 </template>
   
   <script>
-export default {
-  name: "CryptoBasics",
-};
-</script>
   
-  <style scoped>
-
-
-
-</style>
+export default {
+    
+  name: "CryptoBasics",
+  methods: {
+    goToDataPage(path) {
+      this.$router.push(`/${path}`)
+    }
+} }
+</script>
   
