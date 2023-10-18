@@ -129,3 +129,21 @@ button:hover {
 .not-logged-in-message {
     margin-top :50px;
 }
+
+.crypto-basics {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(25, 26, 26);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.h1-guide, .h2-guide {
+  font-size: 2rem;
+  color:#ffffff;
+  margin-bottom: 1rem;
+}
+.header,
+.section {
+  margin-bottom: 2rem;
+}
