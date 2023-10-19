@@ -28,11 +28,7 @@
         required: true,
       },
     },
-    methods: {
-      goToDataPage(path) {
-        this.$router.push(`/${path}`);
-      },
-    },
+    
   };
   </script>
   
