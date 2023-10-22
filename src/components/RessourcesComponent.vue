@@ -42,13 +42,13 @@
 }
 
 .resource-card {
-  flex: 1 1 48%; /* Cela permettra à chaque carte de prendre près de la moitié de la largeur disponible */
+  flex: 1 1 48%; 
   background-color: rgb(32, 28, 28);
   border-radius: 10px;
   display: flex;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; /* Ajuste la boîte pour inclure le padding et la bordure dans la dimension totale */
+  box-sizing: border-box; 
 }
 
 .resource-image {
