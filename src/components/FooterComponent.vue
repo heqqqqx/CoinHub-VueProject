@@ -1,6 +1,6 @@
 <template>
   <footer class="app-footer">
-    <p>&copy; 2023 </p>
+    <p>&copy; CoinHub 2023 </p>
   </footer>
 </template>
 
