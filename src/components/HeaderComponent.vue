@@ -1,27 +1,39 @@
 <template>
-  
-      
   <nav class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="/">CoinHub</a>
-      <img class="logo" src="../assets/coinhub.png" alt="logo" width="50" height="50">
-      <a class="movingbar-data" ><MovingBar /></a>
-      <ul class="navbar-nav">
+      <a class="navbar-brand" href="/">
+        <span class="coin">Coin</span>
+        <span class="hub">Hub</span>
+      </a>
 
+      <img
+        class="logo"
+        src="../assets/coinhub.png"
+        alt="logo"
+        width="50"
+        height="50"
+      />
+      <a class="movingbar-data"><MovingBar /></a>
+      <ul class="navbar-nav">
         <li v-if="!user" class="nav-item">
-            <LoginButton/>
+          <LoginButton />
         </li>
         <li v-if="user" class="nav-item">
-            <LogoutButton/>
+          <LogoutButton />
         </li>
-        
-        <li class="nav-item"><router-link to="/home" class="nav-link">Beginner</router-link></li>
-        <li class="nav-item"><router-link to="/data" class="nav-link">Data</router-link></li>
-        <li class="nav-item"><router-link to="/news" class="nav-link">News</router-link></li>
+
+        <li class="nav-item">
+          <router-link to="/home" class="nav-link">Beginner</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/data" class="nav-link">Data</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/news" class="nav-link">News</router-link>
+        </li>
       </ul>
     </div>
   </nav>
-
 </template>
 
 <script>
@@ -35,12 +47,12 @@ export default {
   components: {
     LoginButton,
     MovingBar,
-    LogoutButton
-},
-setup() {
+    LogoutButton,
+  },
+  setup() {
     const { user } = useAuth0();
     return { user };
-  }
+  },
 };
 </script>
 
