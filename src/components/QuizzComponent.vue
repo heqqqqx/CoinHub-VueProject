@@ -18,7 +18,7 @@
         {{ option }}
       </div>
     </div>
-    <button @click="submit">Submit</button>
+    <button @click="submit" class="quizz-button">Submit</button>
   </div>
 </template>
   
@@ -102,44 +102,3 @@ export default {
   },
 };
 </script>
-  
-  <style scoped>
-.quiz-component {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.question {
-  margin-bottom: 20px;
-}
-
-.answer {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  margin: 5px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.answer.selected {
-  border-color: blue;
-}
-
-.answer.correct {
-  border-color: green;
-}
-
-.answer.wrong {
-  border-color: red;
-}
-
-.answer.partial {
-  border-color: orange;
-}
-</style>
-  

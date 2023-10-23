@@ -48,6 +48,6 @@ mounted() {
   
   <style scoped>
   .tradingview-widget-container {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   </style>

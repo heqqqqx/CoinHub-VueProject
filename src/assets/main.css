@@ -7,22 +7,24 @@
 }
 
 body {
-    background-color: #181818;
+    background-image: url('@/assets/test-background.png');
+    background-color: #1b1b1b;
     text-align: justify;
     color: #9f9f9f;
+    background-repeat: no-repeat;
 }
 
 @font-face {
-    font-family: 'Grenale Slab';
-    src: url('../assets/fonts/GrnD-NorReg.woff2') format('woff2'), url('../assets/fonts/GrnD-NorReg.woff') format('woff');
-    font-weight: normal;
+    font-family: 'JUST Sans', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/just-sans');
+    font-weight: bold;
     font-style: normal;
 }
 
 a,
 .green {
     text-decoration: none;
-    color: hsla(160, 100%, 37%, 1);
+    color: #ec3e86;
     transition: 0.4s;
 }
 
@@ -43,7 +45,7 @@ a,
 }
 
 .navbar {
-    background-color: rgb(32, 28, 28);
+    background-color: #121212;
     color: white;
     width: 100%;
     position: fixed;
@@ -56,14 +58,22 @@ a,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Grenale Slab', sans-serif;
-    font-weight: bolder;
+    font-family: 'JUST Sans', sans-serif;
+    color: #ffffff;
+}
+
+.navbar-brand .hub {
+    background-color: #ec3e86;
+    border-radius: 5px;
+    color: #131313;
 }
 
 .navbar-nav {
@@ -84,16 +94,30 @@ a,
 
 .nav-link {
     color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-transform: uppercase;
 }
 
-.nav-link:hover {
-    background-color: #444;
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #ec3e86;
+    border-radius: 5px;
+    transition: width 0.4s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    text-transform: uppercase;
 }
 
 button {
-    background-color: #333;
     border: none;
     color: #007bff;
     padding: 15px 32px;
@@ -116,7 +140,6 @@ button:hover {
     background-color: transparent;
     border: none;
     color: white;
-    padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: inherit;
     font-family: inherit;
@@ -125,10 +148,7 @@ button:hover {
     margin: 0;
     text-transform: none;
     overflow: visible;
-}
-
-.nav-link-button:hover {
-    background-color: #444;
+    text-transform: uppercase;
 }
 
 .ticker-box {
@@ -144,7 +164,7 @@ button:hover {
 }
 
 .not-logged-in-message {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .crypto-basics {
@@ -153,7 +173,7 @@ button:hover {
     margin: 0 auto;
     background-color: rgb(25, 26, 26);
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .h1-guide,
@@ -201,7 +221,7 @@ button:hover {
 
 .content {
     flex-grow: 1;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .li-text {
@@ -238,14 +258,16 @@ footer {
 }
 
 .search-button,
-.reset-button, .nextprevious-button{
+.reset-button,
+.nextprevious-button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     font-size: 16px;
 }
-.nextprevious-button{
+
+.nextprevious-button {
     width: 100px;
     height: 50px;
     align-self: center;
@@ -274,3 +296,48 @@ footer {
     background-color: #0056b3;
 }
 
+.quiz-component {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ec3e86;
+    border-radius: 4px;
+}
+
+.quizz-button {
+    color: #ec3e86;
+}
+
+.quizz-button:hover {
+    background-color: #ec3e86;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.answer.selected {
+    border-color: blue;
+}
+
+.answer.correct {
+    border-color: green;
+}
+
+.answer.wrong {
+    border-color: red;
+}
+
+.answer.partial {
+    border-color: orange;
+}

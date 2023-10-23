@@ -1,5 +1,5 @@
 <template>
-  <GuideComponent
+  <GuideComponent class="crypto-basics"
     headerTitle="About Us"
     headerDescription="Learn more about our platform and team."
     :sections="aboutSections"
