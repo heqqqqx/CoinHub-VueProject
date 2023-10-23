@@ -72,7 +72,7 @@ content: "The applications of cryptocurrency are vast and growing. From shopping
 },
 {
 title: "Where can I find more information?",
-content: "Find more information on the official <a href='https://www.coinbase.com/learn/crypto-basics/what-is-cryptocurrency'>Coinbase website</a> ."
+content: "Find more information on the official <a href='https://www.coinbase.com/learn/crypto-basics/what-is-cryptocurrency'>Coinbase website</a> <br>You can also have some additional documents in our <a href='/ressources'>ressource page.</a>"
 }
 ]};
 }
