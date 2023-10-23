@@ -34,27 +34,37 @@
   }
   </script>
 <style scoped>
-.resources-container {
+.resources-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 20px;
+  flex-wrap: nowrap;
+}
+
+.resources-page > button {
+    flex-shrink: 0; /* Cela empêchera les boutons de rétrécir */
 }
 
 .resource-card {
-  flex: 1 1 48%; 
+
+  width: 800px;
+  max-width: 100%;
+  height:120px;
   background-color: rgb(32, 28, 28);
   border-radius: 10px;
   display: flex;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  max-width: calc(100% - 200px); 
+
 }
 
 .resource-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100px ;
+  height: 100px ;
   margin-right: 10px;
 }
 
@@ -81,5 +91,3 @@
   text-decoration: underline;
 }
 </style>
-  
-  

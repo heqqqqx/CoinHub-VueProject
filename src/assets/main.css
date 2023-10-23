@@ -238,7 +238,17 @@ footer {
 }
 
 .search-button,
-.reset-button {
+.reset-button, .nextprevious-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.nextprevious-button{
+    width: 100px;
+    height: 50px;
+    align-self: center;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -263,3 +273,4 @@ footer {
 .search-button:hover {
     background-color: #0056b3;
 }
+
