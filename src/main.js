@@ -12,7 +12,7 @@ app.use(router);
 app.use(
     createAuth0({
       domain: "coinhub-vue.eu.auth0.com",
-      clientId: "QcMDqD7mTn6ple3VN7FoWYEylZV3PQXZ",
+      clientId: process.env.VUE_APP_LOGIN_KEY,
       authorizationParams: {
         redirect_uri: window.location.origin
       }
