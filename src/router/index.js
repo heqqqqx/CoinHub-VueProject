@@ -2,6 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 import NewsVue from '../views/NewsVue.vue';
 import DataVue from '../views/DataVue.vue'
 import DataView from '../views/DataGeneral.vue'
+import BeginnerView from '../views/BeginnerGuide.vue'
+import AboutVue from '../views/AboutVue.vue'
+import RessourcesVue from '../views/RessourcesVue.vue'
+import Error404 from '../views/ErrorVue.vue'
 const routes = [{
         path: '/data/:cryptoname',
         name: 'Data',
@@ -25,8 +29,27 @@ const routes = [{
         name: 'data',
         component: DataView
     },
-    
+    {
+        path: '/home',
+        name: 'Home',
+        component: BeginnerView,
 
+    },
+    {
+        path: '/',
+        name: 'AboutUs',
+        component: AboutVue
+    },
+    {
+        path: '/ressources',
+        name: 'Ressources',
+        component: RessourcesVue
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'Error',
+        component: Error404
+    },
 ];
 
 const router = createRouter({

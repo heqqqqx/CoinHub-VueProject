@@ -28,11 +28,11 @@
     },
     {
       "description": "Litecoin",
-      "proName": "BINANCE:LTCUSDT"
+      "proName": "BINANCE:LTCUSD"
     },
     {
       "description": "Ripple",
-      "proName": "BINANCE:XRPUSDT"
+      "proName": "BINANCE:XRPUSD"
     },
     {
       "description": "Solana",
@@ -40,13 +40,13 @@
     },
     {
       "description": "Doge",
-      "proName": "BINANCE:DOGEUSDT"
+      "proName": "BINANCE:DOGEUSD"
     } ],
         showSymbolLogo: true,
         colorTheme: 'dark',
         isTransparent: true,
         displayMode: 'regular',
-        largeChartUrl: "http://localhost:8080/data/{tvsymbol}",
+        largeChartUrl: window.location.origin+"/data/{tvsymbol}",
         locale: 'en'
       });
       this.$el.appendChild(script); 
