@@ -76,13 +76,6 @@ a,
     color: #131313;
 }
 
-.navbar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
 .nav-item {
     margin-left: 1rem;
 }
@@ -100,11 +93,20 @@ a,
     text-transform: uppercase;
 }
 
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* add this line */
+}
+
 .nav-link::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -25px;
     width: 0%;
     height: 2px;
     background-color: #ec3e86;
@@ -118,8 +120,9 @@ a,
 }
 
 button {
-    border: none;
-    color: #007bff;
+    border: 1px solid #ec3e86;
+    color: #ec3e86;
+    background-color: #131313;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -132,8 +135,8 @@ button {
 }
 
 button:hover {
-    background-color: #007BFF;
-    color: white;
+    background-color: #ec3e86;
+    color: #131313;
 }
 
 .nav-link-button {
@@ -268,14 +271,23 @@ footer {
 }
 
 .nextprevious-button {
-    width: 100px;
+    width: 110px;
     height: 50px;
     align-self: center;
+    text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
-    border: none;
+    background-color: #131313;
+    border: 1px solid #ec3e86;
+    color: #ec3e86;
     cursor: pointer;
     font-size: 16px;
+}
+
+.nextprevious-button:hover {
+    background-color: #ec3e86;
+    border: 1px solid #131313;
+    color: #131313;
 }
 
 .search-button {
@@ -305,11 +317,15 @@ footer {
 }
 
 .quizz-button {
+    background-color: #131313;
+    border: 1px solid #ec3e86;
     color: #ec3e86;
 }
 
 .quizz-button:hover {
     background-color: #ec3e86;
+    border: 1px solid #131313;
+    color: #131313;
 }
 
 .question {
