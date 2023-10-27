@@ -30,13 +30,13 @@ const routes = [{
         component: DataView
     },
     {
-        path: '/home',
-        name: 'Home',
+        path: '/beginner',
+        name: 'beginner',
         component: BeginnerView,
 
     },
     {
-        path: '/',
+        path: '/about',
         name: 'AboutUs',
         component: AboutVue
     },
@@ -45,11 +45,12 @@ const routes = [{
         name: 'Ressources',
         component: RessourcesVue
     },
+
     {
         path: '/:pathMatch(.*)*',
         name: 'Error',
         component: Error404
-    },
+    }
 ];
 
 const router = createRouter({
