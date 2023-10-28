@@ -14,10 +14,7 @@
       script.async = true;
       script.innerHTML = JSON.stringify({
         "symbols": [
-    {
-      "proName": "FX_IDC:EURUSD",
-      "title": "EUR to USD"
-    },
+    
     {
       "proName": "BITSTAMP:BTCUSD",
       "title": "Bitcoin"

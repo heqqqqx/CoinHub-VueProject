@@ -6,6 +6,7 @@ import BeginnerView from '../views/BeginnerGuide.vue'
 import AboutVue from '../views/AboutVue.vue'
 import RessourcesVue from '../views/RessourcesVue.vue'
 import Error404 from '../views/ErrorVue.vue'
+import Home from '../views/HomePage.vue'
 const routes = [{
         path: '/data/:cryptoname',
         name: 'Data',
@@ -30,13 +31,13 @@ const routes = [{
         component: DataView
     },
     {
-        path: '/home',
-        name: 'Home',
+        path: '/beginner',
+        name: 'beginner',
         component: BeginnerView,
 
     },
     {
-        path: '/',
+        path: '/about',
         name: 'AboutUs',
         component: AboutVue
     },
@@ -46,10 +47,16 @@ const routes = [{
         component: RessourcesVue
     },
     {
+        path: '/',
+        name: 'Home',
+        component: Home
+
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'Error',
         component: Error404
-    },
+    }
 ];
 
 const router = createRouter({

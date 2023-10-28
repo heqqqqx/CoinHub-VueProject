@@ -6,13 +6,6 @@
         <span class="hub">Hub</span>
       </a>
 
-      <img
-        class="logo"
-        src="../assets/coinhub.png"
-        alt="logo"
-        width="50"
-        height="50"
-      />
       <a class="movingbar-data"><MovingBar /></a>
       <ul class="navbar-nav">
         <li v-if="!user" class="nav-item">
@@ -21,9 +14,11 @@
         <li v-if="user" class="nav-item">
           <LogoutButton />
         </li>
-
         <li class="nav-item">
-          <router-link to="/home" class="nav-link">Beginner</router-link>
+          <router-link to="/about" class="nav-link">About</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/beginner" class="nav-link">Beginner</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/data" class="nav-link">Data</router-link>

@@ -106,7 +106,7 @@ a,
     content: "";
     position: absolute;
     left: 0;
-    bottom: -25px;
+    bottom: -23px;
     width: 0%;
     height: 2px;
     background-color: #ec3e86;
@@ -137,6 +137,12 @@ button {
 button:hover {
     background-color: #ec3e86;
     color: #131313;
+}
+
+.tradingview-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .nav-link-button {

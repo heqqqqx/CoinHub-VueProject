@@ -11,12 +11,11 @@ const app = createApp(App);
 app.use(router);
 app.use(
     createAuth0({
-      domain: "coinhub-vue.eu.auth0.com",
-      clientId: process.env.VUE_APP_LOGIN_KEY,
-      authorizationParams: {
-        redirect_uri: window.location.origin
-      }
-    }
-  ));
+        domain: "coinhub-vue.eu.auth0.com",
+        clientId: process.env.VUE_APP_LOGIN_KEY,
+        authorizationParams: {
+            redirect_uri: window.location.origin
+        }
+    }));
 
 app.mount('#app')
