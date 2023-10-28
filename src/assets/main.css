@@ -139,6 +139,12 @@ button:hover {
     color: #131313;
 }
 
+.tradingview-home {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .nav-link-button {
     background-color: transparent;
     border: none;
