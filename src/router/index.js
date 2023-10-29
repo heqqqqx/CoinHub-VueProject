@@ -7,7 +7,6 @@ import AboutVue from '../views/AboutVue.vue'
 import RessourcesVue from '../views/RessourcesVue.vue'
 import Error404 from '../views/ErrorVue.vue'
 import Home from '../views/HomePage.vue'
-import TestMail from '../views/NewMail.vue'
 const routes = [{
         path: '/data/:cryptoname',
         name: 'Data',
@@ -51,12 +50,6 @@ const routes = [{
         path: '/',
         name: 'Home',
         component: Home
-
-    },
-    {
-        path: '/test',
-        name: 'Test',
-        component: TestMail
 
     },
     {
