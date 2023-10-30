@@ -1,5 +1,6 @@
 # my-vue-project
-
+We used the following apis :
+cryptonews-api and tradingview
 ## Project setup
 ```
 npm install
