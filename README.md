@@ -20,5 +20,6 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Access to CoinHub directly online
+
+CoinHub is directly accessible (online)[https://thecoinhub.xyz]
