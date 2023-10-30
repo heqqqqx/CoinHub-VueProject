@@ -22,4 +22,4 @@ npm run lint
 
 ### Access to CoinHub directly online
 
-CoinHub is directly accessible (online)[https://thecoinhub.xyz]
+CoinHub is directly accessible [online](https://thecoinhub.xyz)
