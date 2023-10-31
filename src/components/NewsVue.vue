@@ -82,7 +82,6 @@ export default {
   color: #ffcc00;
   text-decoration: none;
 }
-/* Add this media query */
 @media (min-width: 1025px) {
   .news-container {
     grid-template-columns: repeat(3, 400px);
