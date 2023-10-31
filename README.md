@@ -1,6 +1,11 @@
 # my-vue-project
 We used the following apis :
-cryptonews-api and tradingview
+cryptonews-api and tradingview and Auth0
+
+## GitHub Repo URL :
+
+[GitHub Repo URL](https://github.com/heqqqqx/CoinHub-VueProject.git)
+
 ## Project setup
 ```
 npm install
@@ -23,4 +28,4 @@ npm run lint
 
 ### Access to CoinHub directly online
 
-CoinHub is directly accessible [online](https://thecoinhub.xyz)
+CoinHub is directly accessible [online](https://thecoinhub.xyz), hosted by GitHub pages and godaddy.
