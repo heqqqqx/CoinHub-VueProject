@@ -2,7 +2,6 @@
   <div v-if="user">
     <div class="searchbar-container">
       <SearchBar @search="handleSearch" />
-
     </div>
     <NewsVue  :news="news" />
   </div>
@@ -11,7 +10,6 @@
       <p>Please log in to view this page and access the full website.</p>
   </div>
 </template>
-
 
 <script>
 import NewsVue from '@/components/NewsVue.vue';
@@ -35,12 +33,12 @@ export default {
     this.searchQuery = query;
     const basePath = this.$route.path.includes('specific') ? `/news/specific/${this.$route.params.cryptoname}` : '/news';
     this.$router.push(`${basePath}/${page}?q=${encodeURIComponent(query)}`);
-    this.fetchData(query);  // Ajoutez cette ligne
+    this.fetchData(query); 
   },
   fetchData(query) {
     const cryptoname = this.$route.params.cryptoname;
     const page = this.$route.params.page;
-    const searchQuery = query || this.searchQuery;  // Utilisez l'argument query ou this.searchQuery
+    const searchQuery = query || this.searchQuery; 
     cryptonews.getNews(page, cryptoname, searchQuery).then(response => {
       this.news = response.data.data;
     });

@@ -23,7 +23,7 @@
         />
         <avisclientComponent
             :client="{
-                name: 'Jean SOMA',
+                name: 'Jean AMOS',
                 grade: 5,
                 review: 'I didn\'t know anything about cryptocurrencies. Thanks to CoinHub, I can now invest in cryptocurrencies and make money!'
             }"
